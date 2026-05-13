@@ -1,0 +1,97 @@
+INFO:     Started server process [32772]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-05-12 23:27:58,494 [INFO] app.routes.upload: Parsed 722 transactions from Discover-Last12Months-20260106.csv
+2026-05-12 23:28:04,071 [INFO] app.services.pdf_parser: PDF parser extracted 186 transactions from eStmt_2025-01-15.pdf (text length=30371)
+2026-05-12 23:28:04,075 [INFO] app.routes.upload: Parsed 186 transactions from eStmt_2025-01-15.pdf
+2026-05-12 23:28:05,519 [INFO] app.services.pdf_parser: PDF parser extracted 13 transactions from eStmt_2025-02-12.pdf (text length=7246)
+2026-05-12 23:28:05,524 [INFO] app.routes.upload: Parsed 13 transactions from eStmt_2025-02-12.pdf
+2026-05-12 23:28:07,196 [INFO] app.services.pdf_parser: PDF parser extracted 38 transactions from eStmt_2025-03-14.pdf (text length=11054)
+2026-05-12 23:28:07,199 [INFO] app.routes.upload: Parsed 38 transactions from eStmt_2025-03-14.pdf
+2026-05-12 23:28:08,304 [INFO] app.services.pdf_parser: PDF parser extracted 10 transactions from eStmt_2025-04-15.pdf (text length=7033)
+2026-05-12 23:28:08,309 [INFO] app.routes.upload: Parsed 10 transactions from eStmt_2025-04-15.pdf
+2026-05-12 23:28:09,491 [INFO] app.services.pdf_parser: PDF parser extracted 12 transactions from eStmt_2025-05-14.pdf (text length=7068)
+2026-05-12 23:28:09,496 [INFO] app.routes.upload: Parsed 12 transactions from eStmt_2025-05-14.pdf
+2026-05-12 23:28:10,915 [INFO] app.services.pdf_parser: PDF parser extracted 3 transactions from eStmt_2025-06-12.pdf (text length=6206)
+2026-05-12 23:28:10,920 [INFO] app.routes.upload: Parsed 3 transactions from eStmt_2025-06-12.pdf
+2026-05-12 23:28:12,004 [INFO] app.services.pdf_parser: PDF parser extracted 9 transactions from eStmt_2025-07-16.pdf (text length=6728)
+2026-05-12 23:28:12,009 [INFO] app.routes.upload: Parsed 9 transactions from eStmt_2025-07-16.pdf
+2026-05-12 23:28:13,188 [INFO] app.services.pdf_parser: PDF parser extracted 14 transactions from eStmt_2025-08-14.pdf (text length=7328)
+2026-05-12 23:28:13,194 [INFO] app.routes.upload: Parsed 14 transactions from eStmt_2025-08-14.pdf
+2026-05-12 23:28:15,184 [INFO] app.services.pdf_parser: PDF parser extracted 19 transactions from eStmt_2025-09-15.pdf (text length=13199)
+2026-05-12 23:28:15,186 [INFO] app.routes.upload: Parsed 19 transactions from eStmt_2025-09-15.pdf
+2026-05-12 23:28:18,468 [INFO] app.services.pdf_parser: PDF parser extracted 16 transactions from eStmt_2025-10-16.pdf (text length=16888)
+2026-05-12 23:28:18,470 [INFO] app.routes.upload: Parsed 16 transactions from eStmt_2025-10-16.pdf
+2026-05-12 23:28:19,868 [INFO] app.services.pdf_parser: PDF parser extracted 14 transactions from eStmt_2025-11-12.pdf (text length=7701)
+2026-05-12 23:28:19,870 [INFO] app.routes.upload: Parsed 14 transactions from eStmt_2025-11-12.pdf
+2026-05-12 23:28:21,875 [INFO] app.services.pdf_parser: PDF parser extracted 28 transactions from eStmt_2025-12-15.pdf (text length=8937)
+2026-05-12 23:28:21,878 [INFO] app.routes.upload: Parsed 28 transactions from eStmt_2025-12-15.pdf
+2026-05-12 23:28:21,938 [INFO] app.services.claude_service: Categorizing: rules=24, cache=0, sending 26 new merchants to Claude.
+2026-05-12 23:28:24,423 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-05-12 23:28:24,428 [ERROR] app.routes.analyze: Anthropic API error 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaywJBpcmYSgqmBp94g3j'}
+2026-05-12 23:32:22,235 [INFO] app.routes.upload: Parsed 722 transactions from Discover-Last12Months-20260106.csv
+2026-05-12 23:32:27,932 [INFO] app.services.pdf_parser: PDF parser extracted 186 transactions from eStmt_2025-01-15.pdf (text length=30371)
+2026-05-12 23:32:27,934 [INFO] app.routes.upload: Parsed 186 transactions from eStmt_2025-01-15.pdf
+2026-05-12 23:32:29,054 [INFO] app.services.pdf_parser: PDF parser extracted 13 transactions from eStmt_2025-02-12.pdf (text length=7246)
+2026-05-12 23:32:29,055 [INFO] app.routes.upload: Parsed 13 transactions from eStmt_2025-02-12.pdf
+2026-05-12 23:32:30,680 [INFO] app.services.pdf_parser: PDF parser extracted 38 transactions from eStmt_2025-03-14.pdf (text length=11054)
+2026-05-12 23:32:30,681 [INFO] app.routes.upload: Parsed 38 transactions from eStmt_2025-03-14.pdf
+2026-05-12 23:32:31,719 [INFO] app.services.pdf_parser: PDF parser extracted 10 transactions from eStmt_2025-04-15.pdf (text length=7033)
+2026-05-12 23:32:31,722 [INFO] app.routes.upload: Parsed 10 transactions from eStmt_2025-04-15.pdf
+2026-05-12 23:32:33,355 [INFO] app.services.pdf_parser: PDF parser extracted 12 transactions from eStmt_2025-05-14.pdf (text length=7068)
+2026-05-12 23:32:33,359 [INFO] app.routes.upload: Parsed 12 transactions from eStmt_2025-05-14.pdf
+2026-05-12 23:32:34,320 [INFO] app.services.pdf_parser: PDF parser extracted 3 transactions from eStmt_2025-06-12.pdf (text length=6206)
+2026-05-12 23:32:34,323 [INFO] app.routes.upload: Parsed 3 transactions from eStmt_2025-06-12.pdf
+2026-05-12 23:32:35,376 [INFO] app.services.pdf_parser: PDF parser extracted 9 transactions from eStmt_2025-07-16.pdf (text length=6728)
+2026-05-12 23:32:35,378 [INFO] app.routes.upload: Parsed 9 transactions from eStmt_2025-07-16.pdf
+2026-05-12 23:32:36,460 [INFO] app.services.pdf_parser: PDF parser extracted 14 transactions from eStmt_2025-08-14.pdf (text length=7328)
+2026-05-12 23:32:36,463 [INFO] app.routes.upload: Parsed 14 transactions from eStmt_2025-08-14.pdf
+2026-05-12 23:32:38,723 [INFO] app.services.pdf_parser: PDF parser extracted 19 transactions from eStmt_2025-09-15.pdf (text length=13199)
+2026-05-12 23:32:38,727 [INFO] app.routes.upload: Parsed 19 transactions from eStmt_2025-09-15.pdf
+2026-05-12 23:32:41,172 [INFO] app.services.pdf_parser: PDF parser extracted 16 transactions from eStmt_2025-10-16.pdf (text length=16888)
+2026-05-12 23:32:41,177 [INFO] app.routes.upload: Parsed 16 transactions from eStmt_2025-10-16.pdf
+2026-05-12 23:32:42,411 [INFO] app.services.pdf_parser: PDF parser extracted 14 transactions from eStmt_2025-11-12.pdf (text length=7701)
+2026-05-12 23:32:42,413 [INFO] app.routes.upload: Parsed 14 transactions from eStmt_2025-11-12.pdf
+2026-05-12 23:32:44,348 [INFO] app.services.pdf_parser: PDF parser extracted 28 transactions from eStmt_2025-12-15.pdf (text length=8937)
+2026-05-12 23:32:44,350 [INFO] app.routes.upload: Parsed 28 transactions from eStmt_2025-12-15.pdf
+2026-05-12 23:32:44,403 [INFO] app.services.claude_service: Categorizing: rules=24, cache=0, sending 26 new merchants to Claude.
+2026-05-12 23:32:54,493 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:32:54,755 [INFO] app.services.claude_service: Categorizing: rules=29, cache=17, sending 4 new merchants to Claude.
+2026-05-12 23:32:58,224 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:32:58,258 [INFO] app.services.claude_service: Categorizing: rules=17, cache=22, sending 11 new merchants to Claude.
+2026-05-12 23:33:04,983 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:05,061 [INFO] app.services.claude_service: Categorizing: rules=13, cache=31, sending 6 new merchants to Claude.
+2026-05-12 23:33:09,447 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:09,493 [INFO] app.services.claude_service: Categorizing: rules=13, cache=32, sending 5 new merchants to Claude.
+2026-05-12 23:33:14,658 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:14,699 [INFO] app.services.claude_service: Categorizing: rules=9, cache=27, sending 14 new merchants to Claude.
+2026-05-12 23:33:24,235 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:24,298 [INFO] app.services.claude_service: Categorizing: rules=30, cache=12, sending 8 new merchants to Claude.
+2026-05-12 23:33:30,369 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:30,425 [INFO] app.services.claude_service: Categorizing: rules=30, cache=6, sending 14 new merchants to Claude.
+2026-05-12 23:33:37,679 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:37,770 [INFO] app.services.claude_service: Categorizing: rules=13, cache=32, sending 5 new merchants to Claude.
+2026-05-12 23:33:42,264 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:42,312 [INFO] app.services.claude_service: Categorizing: rules=12, cache=29, sending 9 new merchants to Claude.
+2026-05-12 23:33:48,396 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:48,470 [INFO] app.services.claude_service: Categorizing: rules=14, cache=33, sending 3 new merchants to Claude.
+2026-05-12 23:33:50,800 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:50,830 [INFO] app.services.claude_service: Categorizing: rules=15, cache=33, sending 2 new merchants to Claude.
+2026-05-12 23:33:52,592 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:52,620 [INFO] app.services.claude_service: Categorizing: rules=14, cache=32, sending 4 new merchants to Claude.
+2026-05-12 23:33:55,630 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:55,665 [INFO] app.services.claude_service: Categorizing: rules=17, cache=31, sending 2 new merchants to Claude.
+2026-05-12 23:33:58,033 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:33:58,064 [INFO] app.services.claude_service: Categorizing: rules=7, cache=18, sending 25 new merchants to Claude.
+2026-05-12 23:34:12,473 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:34:12,604 [INFO] app.services.claude_service: Categorizing: rules=9, cache=20, sending 21 new merchants to Claude.
+2026-05-12 23:34:22,609 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:34:22,733 [INFO] app.services.claude_service: Categorizing: rules=13, cache=15, sending 22 new merchants to Claude.
+2026-05-12 23:34:35,067 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:34:35,193 [INFO] app.services.claude_service: Categorizing: rules=11, cache=12, sending 27 new merchants to Claude.
+2026-05-12 23:34:50,480 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-12 23:34:50,706 [INFO] app.services.claude_service: Categorized 50 transactions with zero API calls (rules=7, cache=43).
+2026-05-12 23:34:50,723 [INFO] app.services.claude_service: Categorized 50 transactions with zero API calls (rules=12, cache=38).
+2026-05-12 23:34:50,741 [INFO] app.services.claude_service: Categorized 50 transactions with zero API calls (rules=12, cache=38).
+2026-05-12 23:34:50,753 [INFO] app.services.claude_service: Categorized 34 transactions with zero API calls (rules=4, cache=30).

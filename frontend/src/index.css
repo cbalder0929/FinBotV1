@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-slate-100 font-sans;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-navy-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-navy-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-navy-700;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-navy-900 border border-navy-700 rounded-lg;
+  }
+
+  .btn-primary {
+    @apply bg-accent-blue hover:bg-blue-600 text-white font-semibold
+           px-6 py-3 rounded-lg transition-all duration-200
+           disabled:opacity-40 disabled:cursor-not-allowed
+           active:scale-95;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .card {
+    @apply bg-navy-800 border border-navy-700 rounded-lg p-4;
+  }
+
+  .tab {
+    @apply px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150
+           text-slate-400 hover:text-slate-200 hover:bg-navy-700;
+  }
+
+  .tab-active {
+    @apply bg-navy-700 text-white;
+  }
+}
+
+/* Drop zone drag-over highlight */
+.drop-active {
+  @apply border-accent-blue bg-blue-500/10;
+}
+
+/* Robot working state — triggers glow on screen */
+.robot-working .robot-screen {
+  animation: screenGlow 0.8s ease-in-out infinite alternate;
+}
+.robot-working .robot-eye {
+  animation: eyePulse 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes screenGlow {
+  from { fill: #1d4ed8; }
+  to   { fill: #06b6d4; }
+}
+
+@keyframes eyePulse {
+  from { fill: #60a5fa; }
+  to   { fill: #34d399; }
+}
+
+/* Staggered row entrance */
+@keyframes rowIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.row-enter {
+  animation: rowIn 0.3s ease-out both;
+}
